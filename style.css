@@ -1,0 +1,90 @@
+/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+header {
+  background: #163f63;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #163f63;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #145ea8;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #eee;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
