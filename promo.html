@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Roofing Assistant - Get Your Free Quote Today!</title>
+    <!-- In this static version we reference the CSS directly -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 AI Roofing Assistant</h1>
+            <p class="subtitle">Your Smart Solution for Roofing Needs</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Success message placeholder for dynamic use -->
+        <div class="content">
+            <h2>Get a Fast & Accurate Roofing Estimate with AI</h2>
+            <p>Our AI Roofing Assistant streamlines the process of getting a quote for your roofing project. Whether you need a repair, replacement, or just an inspection, our intelligent system and expert team are here to help.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Chatbot</h3>
+                    <p>Get instant answers to your roofing questions 24/7 and pre-qualify your project with our intelligent assistant.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🗕</div>
+                    <h3>Automated Scheduling</h3>
+                    <p>Easily book estimates and inspections directly from our platform, synced with our team's calendar.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Lead Dashboard</h3>
+                    <p>For contractors: a simple CRM view to track new leads, job types, and follow-up status.</p>
+                </div>
+            </div>
+
+            <h2>How It Works</h2>
+            <p><strong>1. Chat or Submit:</strong> Use our AI Chatbot or fill out the form below with your roofing needs.</p>
+            <p><strong>2. Automated Assessment:</strong> Our AI reviews your information and pre-qualifies your project.</p>
+            <p><strong>3. Schedule & Quote:</strong> We'll contact you to schedule an inspection and provide a detailed quote.</p>
+            <p><strong>4. Expert Service:</strong> Our trusted roofing partners deliver top-quality service.</p>
+        </div>
+
+        <!-- Lead form section -->
+        <div class="content">
+            <div class="form-section">
+                <h2>Tell Us About Your Roofing Project</h2>
+                <form id="leadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Property Address</label>
+                        <input type="text" id="address" name="address" placeholder="Street address, city, state">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="job_type">Type of Job</label>
+                        <select id="job_type" name="job_type">
+                            <option value="repair">Repair</option>
+                            <option value="replacement">Replacement</option>
+                            <option value="inspection">Inspection</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Describe Your Roofing Needs</label>
+                        <textarea id="description" name="description" placeholder="e.g., 'I have a leak near the chimney', 'Need a full roof replacement', 'Curious about solar panel installation'"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo">Upload Photos of Your Roof (Optional)</label>
+                        <div class="file-upload">
+                            <input type="file" id="photo" name="photo" accept="image/*" multiple>
+                            <div class="upload-hint">Photos help our AI and team provide a more accurate initial assessment.</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Get My Free Estimate</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Benefits section -->
+        <div class="content">
+            <h2>Why Choose the AI Roofing Assistant?</h2>
+            <p><strong>⚡️ Speed & Efficiency:</strong> Get faster responses and quicker scheduling for your roofing projects.</p>
+            <p><strong>💡 Intelligent Pre-qualification:</strong> Our AI helps understand your needs upfront, saving you time and effort.</p>
+            <p><strong>🤝 Connect with Experts:</strong> We partner with top-rated local roofing contractors to ensure quality service.</p>
+            <p><strong>📱 Seamless Communication:</strong> Stay informed with automated updates and reminders via SMS/email.</p>
+        </div>
+    </div>
+
+    <!-- Chatbot UI (static placeholder) -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div id="chatbot-toggle" class="chatbot-toggle">
+            <span>📩</span>
+        </div>
+        <div id="chatbot-container" class="chatbot-container" style="display:none;">
+            <div class="chatbot-header">
+                <h4>🤖 AI Roofing Assistant</h4>
+                <button id="chatbot-close" class="chatbot-close">&times;</button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    Hi! I'm your AI Roofing Assistant. I can help answer questions about roofing services, pricing, and more. What can I help you with today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; text-align: center; padding: 30px; margin-top: 50px; position: relative;">
+        <div style="content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #d2691e, #a0522d);"></div>
+        <p>&copy; 2025 AI Roofing Assistant. Powered by AI, Delivered by Experts.</p>
+    </footer>
+
+    <!-- Lightweight script to toggle chatbot visibility. In this static version there's no backend chat functionality. -->
+    <script>
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotContainer = document.getElementById('chatbot-container');
+        const chatbotClose = document.getElementById('chatbot-close');
+        let chatbotOpen = false;
+        chatbotToggle.addEventListener('click', () => {
+            chatbotOpen = !chatbotOpen;
+            chatbotContainer.style.display = chatbotOpen ? 'flex' : 'none';
+        });
+        chatbotClose.addEventListener('click', () => {
+            chatbotOpen = false;
+            chatbotContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
